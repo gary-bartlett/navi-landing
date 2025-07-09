@@ -4,74 +4,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Navi – Your AI Support Specialist</title>
+  <link rel="icon" href="https://via.placeholder.com/32x32.png?text=N" type="image/png" />
+  <meta name="description" content="Navi is the always-on AI support agent, trained on your data, tuned to your voice, and built to resolve 90% of support tickets instantly." />
+  <meta property="og:title" content="Meet Navi – Your AI Support Specialist" />
+  <meta property="og:description" content="Always kind. Always fast. Always ready." />
+  <meta property="og:image" content="https://via.placeholder.com/800x420.png?text=Navi+Preview" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
-    .bg-hero {
-      background: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+    body {
+      background-color: #0f172a;
+      line-height: 1.6;
+    }
+    h1, h2, h3 { letter-spacing: -0.02em; }
+    .headline-rotate > span {
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+    .headline-rotate > span.active {
+      display: inline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-<body class="font-sans text-white">
+<body class="text-white font-sans antialiased">
 
-  <!-- Hero Section -->
-  <section class="bg-hero min-h-screen flex flex-col items-center justify-center px-6 text-center">
-    <h1 class="text-5xl md:text-6xl font-extrabold max-w-4xl leading-tight mb-4">
-      Meet <span class="text-indigo-400">Navi</span><br>Your AI-Powered Support Agent
-    </h1>
-    <p class="text-xl text-gray-300 max-w-2xl mb-8">
-      Trained on your data. Tuned to your voice. Built to resolve 90% of support tickets with clarity, empathy, and speed — across chat, email, and beyond.
-    </p>
-    <a href="#get-started" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-md hover:scale-105 transition-transform duration-300">
-      Request Early Access
-    </a>
-  </section>
-
-  <!-- Feature Highlights -->
-  <section class="bg-black py-20 px-8 text-center">
-    <h2 class="text-4xl font-bold mb-12">Why Teams Choose Navi</h2>
-    <div class="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto text-left">
-      <div>
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">🎯 Precision Responses</h3>
-        <p class="text-gray-300">Navi doesn't guess. It pulls real-time knowledge from your documentation, tickets, and tone guides to respond like your best rep — instantly.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">🧠 Memory-Aware AI</h3>
-        <p class="text-gray-300">Powered by MindSync™, Navi retains context across conversations and improves with every reply — no retraining required.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-2 text-indigo-400">⚡ Built for Speed</h3>
-        <p class="text-gray-300">From first word to resolution, Navi replies in under 2 seconds. No waiting. No forwarding. Just solutions.</p>
-      </div>
+<!-- Hero Section -->
+<section class="flex flex-col justify-center items-center text-center min-h-screen px-6">
+  <h1 class="text-5xl md:text-6xl font-extrabold leading-tight max-w-4xl mb-6">
+    <div class="headline-rotate h-24">
+      <span class="active">Trained on your data.</span>
+      <span>Tuned to your voice.</span>
+      <span>Resolves 90% of tickets instantly.</span>
+      <span>Your new support agent never calls in sick.</span>
     </div>
-  </section>
+  </h1>
+  <p class="text-xl text-gray-300 max-w-2xl mb-8">
+    Navi is the AI agent your customers deserve — clear, kind, and always on.
+  </p>
+  <a href="#cta" class="bg-white text-black font-semibold px-8 py-4 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+    Request Early Access
+  </a>
+</section>
 
-  <!-- Insights Teaser -->
-  <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-black py-20 px-8 text-center">
-    <h2 class="text-4xl font-bold mb-6">Real-Time Support Intelligence</h2>
-    <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10">Gain instant insights into trending issues, resolution rates, and agent performance — no surveys, just signal.</p>
-    <img src="https://via.placeholder.com/960x480.png?text=Live+Insights+Dashboard" class="mx-auto rounded-xl shadow-lg" alt="Dashboard Mockup" />
-  </section>
+<!-- Voice of Navi -->
+<section class="min-h-screen flex flex-col justify-center items-center px-8 text-center py-20">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">Who is Navi?</h2>
+  <p class="text-lg text-gray-300 max-w-xl mb-10">
+    Navi isn’t just an AI support assistant — she’s your brand’s voice, always on, always learning, always kind.
+  </p>
+  <img src="https://via.placeholder.com/180x180.png?text=Navi+Avatar" alt="Navi Avatar" class="rounded-full border-4 border-indigo-500 shadow-lg mb-6" />
+  <div class="bg-gray-900 rounded-xl shadow-xl p-8 max-w-2xl">
+    <p class="text-indigo-400 uppercase text-sm font-bold mb-2">Tone of Voice</p>
+    <ul class="text-left space-y-3 text-gray-200">
+      <li>💬 <strong>Clear</strong>: Navi avoids jargon and speaks plainly.</li>
+      <li>🤝 <strong>Empathetic</strong>: Warm, helpful, and assumes good intent.</li>
+      <li>⚙️ <strong>Efficient</strong>: Responses are concise, never cold.</li>
+      <li>🔁 <strong>Consistent</strong>: The experience is always on-brand.</li>
+    </ul>
+  </div>
+  <span class="inline-block mt-8 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-full shadow-md">Coming Soon</span>
+</section>
 
-  <!-- Agent Reveal -->
-  <section class="bg-black py-24 px-8 text-center">
-    <h2 class="text-4xl font-bold mb-6">Navi Is More Than a Bot</h2>
-    <p class="text-lg text-gray-400 max-w-xl mx-auto mb-10">Think of her as your first AI teammate — endlessly patient, always learning, and never off-duty.</p>
-    <img src="https://via.placeholder.com/160x160.png?text=Navi" class="mx-auto mb-4 rounded-full border-4 border-indigo-500 shadow-lg" alt="Navi Avatar" />
-    <span class="inline-block px-4 py-2 bg-indigo-600 rounded-full font-medium">Coming Soon</span>
-  </section>
+<!-- Feature Grid -->
+<section class="py-20 px-8 text-center bg-black">
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">Why Teams Choose Navi</h2>
+  <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-12">
+    Navi solves real problems for real support teams — blending AI precision with human-like care.
+  </p>
+  <div class="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto text-left">
+    <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">🎯 Precision Resolution</h3>
+      <p class="text-gray-300">Understands intent and responds within policy, instantly.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">🧠 Adaptive Memory</h3>
+      <p class="text-gray-300">Learns from every conversation with MindSync™ memory.</p>
+    </div>
+    <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 class="text-xl font-semibold text-indigo-400 mb-2">⚡ Lightning Fast</h3>
+      <p class="text-gray-300">Under 2s response time = no backlog, no frustration.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Final CTA -->
-  <section id="get-started" class="bg-indigo-700 text-white py-24 px-8 text-center">
-    <h2 class="text-4xl font-bold mb-4">Be the First to Deploy Navi</h2>
-    <p class="text-lg mb-8 text-indigo-100">Join the early access list and see how your support team transforms in just 7 days.</p>
-    <form action="https://formspree.io/f/mwkgaoyy" method="POST" class="max-w-md mx-auto">
-      <input type="email" name="email" placeholder="you@example.com" required class="w-full p-3 rounded text-black mb-4" />
-      <button type="submit" class="w-full px-6 py-3 bg-white text-indigo-700 font-bold rounded-xl shadow-md hover:bg-indigo-100 transition-all">
-        Join the Waitlist
-      </button>
-    </form>
-  </section>
+<!-- Scripts -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const phrases = document.querySelectorAll(".headline-rotate > span");
+    let index = 0;
+    function rotate() {
+      phrases.forEach(p => p.classList.remove("active"));
+      phrases[index].classList.add("active");
+      index = (index + 1) % phrases.length;
+    }
+    rotate();
+    setInterval(rotate, 3000);
+  });
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init({ duration: 800, easing: 'ease-out-quart', once: true });</script>
 
 </body>
 </html>
